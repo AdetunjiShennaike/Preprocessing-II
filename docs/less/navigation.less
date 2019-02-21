@@ -26,6 +26,31 @@
       &:visited {
         color: @shark;
       }
-    } 
+    }
+    
+    /*mobile page*/
+    @media @mobile {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width:90%;
+      margin: 0 auto;
+    }
   }
+
+  /*tablet page*/
+  @media @tablet{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h1 {
+      width: 90%;
+    }
+    nav {
+      width: 90%;
+    }
+  }
+
+  
 }
