@@ -1,1 +1,31 @@
 // Navigation Styles here
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px dashed @navigation-border;
+  margin-top: 20px;
+  padding-bottom: 30px;
+
+  h1 {
+    width: 20%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 45%;
+    
+    a {
+      text-decoration: none;
+      color: @shark;
+      font-size: 1.6rem;
+
+      &:visited {
+        color: @shark;
+      }
+    } 
+  }
+}
