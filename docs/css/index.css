@@ -206,6 +206,22 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.form form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30%;
+  color: #212529;
+  font-size: 1.6rem;
+  width: 40%;
+  margin-bottom: 30px;
+}
+.form form .btn {
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  border-radius: 15px;
+  padding: 10px 0;
+}
 .home .main-content {
   border-bottom: 2px dashed #C0C0C0;
   padding-bottom: 20px;
@@ -266,7 +282,24 @@ img {
   width: 85%;
   border-radius: 15px;
   color: #FFFFFF;
-  background-color: #17A2B8;
   padding: 10px 0;
   font-size: 2.5rem;
+  background-color: #17A2B8;
+  animation-name: colorful;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes colorful {
+  0% {
+    background-color: #3ACEAD;
+  }
+  25% {
+    background-color: #B6EF81;
+  }
+  50% {
+    background-color: #00B9B9;
+  }
+  100% {
+    background-color: #F9F871;
+  }
 }

@@ -70,17 +70,12 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+     
       button {
-        width: 85%;
-        border-radius: 15px;
-        color: @white;
-        background-color: @button-bg;
-        padding: 10px 0;
-        font-size: 2.5rem;
-
+        .style-button(85%, @button-bg, @white);
+        .button-color-animation();
       }
     }
-
-    
   }
+
 }// home
