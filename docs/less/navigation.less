@@ -1,0 +1,56 @@
+// Navigation Styles here
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px dashed @navigation-border;
+  margin-top: 20px;
+  padding-bottom: 30px;
+
+  h1 {
+    width: 20%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 45%;
+    
+    a {
+      text-decoration: none;
+      color: @shark;
+      font-size: 1.6rem;
+
+      &:visited {
+        color: @shark;
+      }
+    }
+    
+    /*mobile page*/
+    @media @mobile {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width:90%;
+      margin: 0 auto;
+    }
+  }
+
+  /*tablet page*/
+  @media @tablet{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h1 {
+      width: 90%;
+    }
+    nav {
+      width: 90%;
+    }
+  }
+
+  
+}

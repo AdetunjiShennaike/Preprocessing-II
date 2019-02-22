@@ -1,0 +1,27 @@
+// Mixins in here
+
+.style-button (@w, @bg, @c) {
+  width: @w;
+  border-radius: 15px;
+  color: @c;
+  background-color: @bg;
+  padding: 10px 0;
+  font-size: 2.5rem;
+
+}
+
+
+.button-color-animation (@color: @button-bg, @name: colorful, @time: 4s, @count: infinite) {
+    background-color: @color;
+    animation-name: @name;
+    animation-duration: @time;
+    animation-iteration-count: @count;
+    // animation-direction: alternate;
+  
+  @keyframes @name{
+    0%   {background-color: @buttonclr1;}
+    25%  {background-color: @buttonclr2;}
+    50%  {background-color: @buttonclr3;}
+    100% {background-color: @buttonclr4;}
+  }
+}
